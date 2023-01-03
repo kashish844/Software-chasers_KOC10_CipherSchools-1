@@ -9,7 +9,7 @@ while True:
     choice = int(input(" 1. Add new contact \n 2. Search contact \n 3.Display contacts\n 4. Edit contact \n 5. Delete contact\n 6.Exit\n Enter your choice: "))
     if choice == 1:
         name = input("Enter the contact name: ")
-        phone = input("Enter the mobile number: ")
+        phone = int(input("Enter the mobile number: "))
         contact[name] = phone
         print("Contact successfully added")
     elif choice == 2:
